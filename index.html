@@ -1,0 +1,38 @@
+<!-- Adalberto pesa 107kg, tem 1,79m de altura, e está preocupado com sua saúde. Como foi informado que um IMC de 30 kg/m² já corresponde ao de uma pessoa no estágio de obesidade 1, Adalberto quer saber se está nesse estágio, uma vez que seu peso está impactando em sua saúde e qualidade de vida. Como aprendiz de programação, Adalberto quer lançar seu peso e altura em seu próprio programa, que tem o objetivo de informar qual estágio de obesidade uma pessoa se encontra. Para isso, o programa deve calcular o IMC, e em seguida informar uma mensagem conforme o valor do IMC calculado:
+
+IMC entre 25 e 29,9 Kg/m²: sobrepeso
+IMC entre 30 e 34,9 Kg/m²: obesidade grau 1
+IMC entre 35 e 39,9 Kg/m²: obesidade grau 2
+IMC maior que 40 Kg/m²: obesidade grau 3
+
+Desconsiderando idade ou sexo, fórmula: IMC: peso / altura * altura, o método .toFixed(2) arredonda o resultado para duas casas decimais.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1> IMC Calculator </h1>
+    <table>
+        <tr>
+            <td><label for="weight">Digite o peso:(Kg)</label></td>
+            <td><input type="number" title="peso" id="weight"></td>
+        </tr>
+        <tr>
+            <td><label for="height">Digite a altura:(cm)</label></td>
+            <td><input type="number" title="" id="height"></td>
+        </tr>
+        <br><br>
+    </table>
+    <br>
+    <button onclick="calculate()">Calcular</button>
+    <p>Resultado:<span id="result"></span></p>
+    
+</body>
+<script src="scripts.js"></script>
+</html>
